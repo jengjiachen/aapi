@@ -30,16 +30,13 @@ header, footer, article, nav, div {
 #mainNav { 
   grid-area: nav; 
   }
-#siteAds { 
-  grid-area: ads; 
-  } 
+
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 575px) {
   body { 
     grid-template-areas: 
       "header"
       "article"
-      "ads"
       "nav"
       "footer";
     grid-template-rows: 80px 1fr 70px 1fr 70px;  
@@ -48,9 +45,18 @@ header, footer, article, nav, div {
 }
 </style>
 <body>
-  <header id="pageHeader">Header</header>
-  <article id="mainArticle">Article</article>
-  <nav id="mainNav">Nav</nav>
-  <div id="siteAds">Ads</div>
+  <header id="pageHeader">Not Your Model Minority</header>
+  <article id="mainArticle">
+    <p>Asians are not a model minority: A dive into the visible and invisible moments for the Asian community in the context of the United States.
+    </p>
+  </article>
+  <nav id="mainNav">
+    <a href="url">About</a>
+    <h3>Process</h3>
+    <h3>Infographic</h3>
+    <h3>Timeline</h3>
+    
+
+  </nav>
   <footer id="pageFooter">Footer</footer>
 </body>

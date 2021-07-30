@@ -1,25 +1,38 @@
 <!doctype html>
 <title>CSS Grid Template 1</title>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet">
+</head>
 <style>
 body { 
+  font-family: 'Hahmlet', serif;
+  color: #3B4A5C;
   display: grid;
   grid-template-areas: 
     "header header header"
     "nav article ads"
     "nav footer footer";
   grid-template-rows: 80px 1fr 70px;  
-  grid-template-columns: 20% 1fr 15%;
+  grid-template-columns: 15% 1fr 15%;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   height: 100vh;
   margin: 0;
   }  
 header, footer, article, nav, div {
+  font-family: 'Hahmlet', serif;
   padding: 1.2em;
-  background: gold;
+  /* background: gold; */
   }
+a{
+  color: #94AFA6;
+  text-decoration: none;
+}
 #pageHeader {
   grid-area: header;
+  color: #94AFA6;
   }
 #pageFooter {
   grid-area: footer;
@@ -29,6 +42,7 @@ header, footer, article, nav, div {
   }
 #mainNav { 
   grid-area: nav; 
+  color: #3B4A5C;
   }
 
 /* Stack the layout on small devices/viewports. */
@@ -45,18 +59,40 @@ header, footer, article, nav, div {
 }
 </style>
 <body>
-  <header id="pageHeader">Not Your Model Minority</header>
+  <header id="pageHeader"> <h1>Not Your Model Minority</h1></header>
   <article id="mainArticle">
     <p>Asians are not a model minority: A dive into the visible and invisible moments for the Asian community in the context of the United States.
     </p>
+    <h2 id="timeline">Timeline</h2>
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c65351124418587.6103669bae073.png" alt="Timeline" width="100%">
+    <h2 id="infographic">Infographic</h2>
+    <h2 id="about">About</h2>
+    <h4>Description</h4>
+      <p>For my capstone project, I am interested in exploring racial tensions, unconscious bias, and what it means to be a minority in America. Asians are often referred to as “model minorities”, which comes with certain assumptions that should be challenged, as well as privileges that are not to be ignored. With the current climate, I have been reevaluating my position as a minority and legal alien. Previously, I have been shielding myself as someone powerless to drive change. Today, I am beginning to challenge this notion.</p>
+      
+      <h4>Problem Statement</h4>
+      <p>Asian American history is often overlooked and forgotten. As a member of the Asian community, I did not learn about events such as the Chinese Exclusion Act until I attended a specific course pertaining to AAPI History. Asian folk of the older generation are also largely unaware of these events. With the current climate of Anti-Asian hate, it is more important than ever to educate ourselves with relevant historical context. Prototype: An illustrated timeline of major events and legislations regarding Asian Americans. Possible formats include website, print, PDF, social media posts and stories.</p>
+      
+      <h4>Total Project Deliverable Summary</h4>
+      <ul>
+        <li>Timeline of significant events in US history that are relevant to the Asian community ( Chinese Exclusion Act, Japanese Internment Camps, Construction of ChinaTowns, The LA Riots)</li>
+       <li> Timeline of Notable people in the Asian community that are often lost to history.</li>
+       <li> Timeline in IG stories, IG posts (more shareable), printable pamphlet, scrollable PDF/website</li>
+      </ul>
+      
+      <h2 id="process">Process</h2>
+      
+      
   </article>
   <nav id="mainNav">
-    <a href="url">About</a>
-    <h3>Process</h3>
-    <h3>Infographic</h3>
-    <h3>Timeline</h3>
+    <h3><a href="#timeline">Timeline</a></h3>
+    <h3><a href="#infographic">Infographic</a></h3>
+    <h3><a href="#about">About</a></h3>
+    <h3><a href="#process">Process</a></h3>
+    
+    
     
 
   </nav>
-  <footer id="pageFooter">Footer</footer>
+  <!-- <footer id="pageFooter">Footer</footer> -->
 </body>
